@@ -1,0 +1,37 @@
+<script setup lang="ts">
+import { RouterLink, RouterView } from "vue-router";
+</script>
+
+<template>
+  <div class="topnav">
+    <RouterLink class="active" to="/">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+  </div>
+  <RouterView />
+</template>
+
+<style scoped>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+</style>
